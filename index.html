@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>SADHU DIGITAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Sadhu DIGITAL</a>
+        <div class="toggle" onclick="togglemenu();"></div>
+            <ul class="menu">
+                <li>
+                    <a href="#Home" onclick="togglemenu();">Home</a>
+                </li>
+                <li>
+                    <a href="#about" onclick="togglemenu();">About</a>
+                </li>
+                <li>
+                    <a href="#Services" onclick="togglemenu();">Services</a>
+                </li>
+                <li>
+
+                    <a href="#contactus" onclick="togglemenu();">Contact</a>
+                </li>
+            </ul>
+    </header>
+
+    <section class="banner" id="Home">
+        <img src="images/wedding-photographs.jpg" class="fitbg">
+        <div class="content">
+        <h2>Filmed your best moments</h2> 
+        <a href="#about" class="btn">Let's explore</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="contentbx">
+            <h2 class="titletext">Weeding photographs</h2>
+            <p class="text">Hello! welcome everyone.<br/>
+                lets see some photos from our galleries.
+            </p>
+            <a href="#" class=btn>Click</a>
+        </div>
+        <div class="imgbx">
+            <img src="images/wedding-photography-500x500.jpg" class="fitbg1">
+        </div>
+    </section>
+
+    <h2 class="titletext1">Let see some collections of us</h2>
+
+    <section class="chart" id="Services">
+        <div class="box">
+            <div class="imgbx">
+                <img src="images/a9c11d6df633897b7f43b8b0832f7a72.jpg" class="fitbg3"> 
+            </div>
+            <div class="content">
+               <a href="#"><h2><span>Bride & Groom photographs</span></h2></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="images/Pose-Ideas-For-Pre-Wedding-Shoot-15.jpg" class="fitbg3"> 
+            </div>
+            <div class="content">
+                <a href="#"><h2><span>Pre-wedding shots</span></h2></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="images/19729_c4ad_7.jpg" class="fitbg3"> 
+            </div>
+            <div class="content">
+                <a href="#"><h2><span>Wedding videoes</span></h2></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="images/dj-in-the-mix-2210x1473.jpg" class="fitbg3"> 
+            </div>
+            <div class="content">
+               <a href="#"><h2><span>Dj sound system </span></h2></a>
+            </div>
+        </div>
+    </section>
+    <section class="banner1">
+        <img src="images/kajal-copy-1200.jpg" class="fitbg4">
+        <div class="content1">
+        <h2>Best memories</h2> 
+        <a href="#" class="btn">Let's see</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="heading" id="contactus">
+            <h2>Contact us</h2>
+        </div>
+        <div class="content2">
+            <div class="contactinfo">
+                <h3>Contact Info</h3>
+                <div class="contactinfobx">
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text1">
+                            <h3>Address</h3>
+                            <p>Abc nagar jharkhand</br>912892</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text1">
+                            <h3>Ph no.</h3>
+                            <p>XXXXYYYY20</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text1">
+                            <h3>Email</h3>
+                            <p>abcdef@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formbx">
+                <form>
+                    <h3>Book online</h3>
+                    <input type="text" name="" placeholder="Full name">
+                    <input type="email" name="" placeholder="Email">
+                    <input type="contact" name="" placeholder="Contact no">
+                    <textarea placeholder="Your basic requirements"></textarea>
+                    <input type="submit" value="send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="heading">
+            <h2>Feedbacks</h2>
+        <div class="formbx1">
+            <form>
+                <textarea placeholder="Give us your Feedbacks"></textarea>
+                <input type="submit" value="send">
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2020. All rights reserved to Sadhu DIGITAL but not taking the copyright of photos.</p>
+    </div>
+
+    <script  type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function togglemenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>

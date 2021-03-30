@@ -1,0 +1,595 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body
+{
+    background-color:black;
+}
+
+header
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+
+}
+
+header.sticky
+{
+    background: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+
+}
+
+header .logo
+{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 570;
+    letter-spacing: 2px;
+
+}
+header.sticky .logo
+{
+    color: #111111;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header.sticky ul li a
+{
+    color: #111111;
+}
+
+section
+{
+    position: relative;
+    padding: 50px;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    background: linear-gradient(to top,#000000,transparent);
+}
+
+.banner .content
+{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .content h2
+{
+    color: #ffffff;
+    font-size: 2.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}
+
+.btn
+{
+    position: relative;
+    display: inline-block;
+    margin-top:30px ;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.fitbg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+
+}
+
+.about
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000000,transparent);
+}
+
+.about .contentbx
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+
+}
+
+.titletext
+{
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}
+
+.text
+{
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.about .imgbx
+{
+    position: relative;
+    min-width: 52%;
+    width: 45%;
+    min-height: 500px;
+    transition: 0.3s;
+
+}
+
+.fitbg1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.about:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 270px;
+    z-index: 1;
+    background: linear-gradient(to top,#000000,transparent);
+}
+
+.chart
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+
+}
+
+.chart .box
+{
+    position: relative;
+    min-width: 280px;
+    height: 470px;
+    background: #191919;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.chart:hover .box
+{
+    opacity: 0.5;
+
+}
+
+.titletext1
+{
+    position: absolute;
+    left: 40;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}
+
+.fitbg3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chart .box:hover
+{
+    opacity: 1;
+}
+
+.chart .box .imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.chart .box .content
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart .box .content  h2 span
+{
+    font-size: 0.8em;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.banner1
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.banner1 .content1
+{
+    position: absolute;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner1 .content1 h2
+{
+    color: #ffffff;
+    font-size: 2.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.fitbg4
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    width: 95%;
+    height: 80%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formbx,
+.formbx1
+{
+    min-width: 50%;
+}
+
+.formbx form,
+.formbx1 form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.formbx form  h3,
+.contactinfo h3
+{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.formbx form input,
+.formbx form textarea,
+.formbx1 form input,
+.formbx1 form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222222;
+    color: #ffffff;
+    resize: none;
+    border-radius: 10px;
+}
+.formbx form textarea
+{
+    min-height: 100px;
+}
+
+.formbx form input[type="submit"],
+.formbx1 form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactinfo
+{
+    min-width: 40%;
+}
+.contactinfobx
+{
+    position: relative;
+}
+.contactinfobx .box
+{
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+}
+
+.contactinfobx .box .text1
+{
+    display: flex;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 1em;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactinfobx .box .text1 h3
+{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+.content2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright
+{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/**Responsive*/
+@media (max-width: 990px)
+{
+    header,
+    header .sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+
+    }
+
+    .menu.active
+    {
+        left: 0;
+    }
+
+    header ul li a
+    {
+        color: #111111;
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    .toggle
+    {
+        width: 40px;
+        height: 40px;
+        background: url(images/hamburger-menu1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active
+    {
+        background: url(images/close1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle
+    {
+        filter: invert(1);
+    }
+     section
+     {
+        padding: 100px 50px;
+     }
+     .about
+     {
+         flex-direction: column;
+     }
+     .about .imgbx
+     {
+        margin-top: 25px;
+        min-width: 92%;
+     }
+     .about .text
+     {
+        font-size: 1em;
+     }
+     .about .contentbx
+     {
+        text-align: center;
+     }
+     .about:before
+     {
+        background: none;
+     }
+     .titletext
+     {
+        font-size: 2em;
+     }
+     .titletext1
+     {
+        font-size: 2em;
+        left: 45;
+     }
+     .btn
+     {
+        margin-top:30px ;
+        padding: 8px 18px;
+     }
+
+     .banner1 .content1
+     {
+        max-width: 300px;
+     }
+
+     .fitbg4
+     {
+        width: 110%;
+        height: 110%;
+     }
+
+     header.sticky
+     {
+        padding: 5px 20px;
+     }
+     header
+     {
+         padding: 15px 40px;
+     }
+
+}
