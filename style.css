@@ -360,15 +360,26 @@ a
     border-radius: 25px;
 }
 
+.feedbacks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
 .heading
 {
-    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
     text-align: center;
-    margin-bottom: 30px;
     color: #ffffff;
 }
 .heading h2
 {
+    margin-bottom: 10px;
     font-weight: 600;
     font-size: 30px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -378,6 +389,7 @@ a
 .formbx1
 {
     min-width: 50%;
+
 }
 
 .formbx form,
@@ -425,6 +437,7 @@ a
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 
 .contactinfo
 {
