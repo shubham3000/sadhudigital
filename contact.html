@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+    <title>SADHU DIGITAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Sadhu DIGITAL</a>
+        <div class="toggle" onclick="togglemenu();"></div>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html">About</a>
+            </li>
+            <li>
+                <a href="index.html">Services</a>
+            </li>
+        </ul> 
+    </header>
+
+    <div class="container">
+        <div class="navigation">
+            <ul class="navigationlist">
+                <li>
+                    <a href="#loginform" onclick="display();">
+                    <span class="icon"><i class="fas fa-sign-in-alt"></i></i></span>
+                    <span class="title">LogIn / Register</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bookingdate">
+                    <span class="icon"><i class="fas fa-calendar-day"></i></span>
+                    <span class="title">Booking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#checkstatus">
+                    <span class="icon"><i class="fas fa-clipboard-list-check"></i></span>
+                    <span class="title">Check Status</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#enquirydate">
+                    <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                    <span class="title">Enquiry</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle1"  onclick="togglemenu1();"></div>
+            <div class="user">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    
+        <!--Login-->
+        <section class="login-page" id="loginform">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <div class="forget"><a href="#">Forgot Password</a></div>
+                    <button type="submit" class="submit-btn">Log In</button>
+                    <div class="heading">
+                        <h2>Follow Us On</h2>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-facebook btn1"></i></a>
+                        <a href="#"><i class="fa fa-instagram btn1"></i></a>
+                    </div>
+                </form>
+
+                <form id="register" class="input-group input-group1">
+                    <input type="text" class="input-field" placeholder="Full Name" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="tel" class="input-field" placeholder="Contact Number '+91'" pattern="[0-9]{10}" minlegth="10" maxlength="10" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <button type="submit" class="submit-btn submit-btn1">Register</button>
+                </form>
+
+            </div>
+        </section>
+
+         <!--Booking-->
+         <section class="booking" id="bookingdate">
+            <div class="form-box1" >
+                <h2>Booking details</h2>
+                <h3>*Filled your details as per your requirement then we contact you.</h3>
+                <div class="booking-details">
+                    <div class="input-box">
+                        <span class="details">Enter Full Name:</span>
+                        <input type="text" class="input-field1" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Enter Email Id:</span>
+                        <input type="email" class="input-field1 field2" required>
+                    </div>
+                    <div class="contactnumber">
+                        <div class="input-box">
+                            <span>Contact Number:</span>
+                            <input type="tel" class="input-field1 field1" placeholder="+91" pattern="[0-9]{10}" minlegth="10" maxlength="10" required>
+                        </div>
+                        <div class="input-box">
+                            <span>Alternate Number:</span>
+                            <input type="tel" class="input-field1 field1" placeholder="+91" pattern="[0-9]{10}" minlegth="10" maxlength="10" required>
+                        </div>
+                    </div>
+                    <span class="booking-date">Booking Date:</span><br>
+                    <div class="bookingdate">
+                        <span>From: 
+                        <input type="date" required>
+                        </span>
+                        <span>To:
+                        <input type="date" required>
+                        </span>
+                    </div>
+                    <div class="requirements">
+                        <textarea placeholder="Your basic requirements and type of function" rows="5" cols="80" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn submit-btn2">Send</button>
+            </div>
+        </section>
+
+        <!--Check status-->
+        <section class="check-status" id="checkstatus">
+            <div class="form-box1" >
+                <h2>Booking Status</h2>
+                <h4>Present Bookings</h4>
+                <div class="border">
+                    <div class="info">Order No. : <span>123456789</span></div>
+                    <div class="info">Order Date : <span>02/02/2021</span></div>
+                    <div class="info">Status : <i class="fas fa-circle orange"></i><span>Pending</span></div>
+                    <button type="button" class="toggle-btn1">Cancel Booking</button>
+                </div>
+                <h4>Past Bookings</h4>
+                <div class="border">
+                    <div class="info">Order No. : <span>123456654</span></div>
+                    <div class="info">Order Date : <span>02/01/2021</span></div>
+                    <div class="info">Status : <i class="fas fa-circle green"></i><span>Booked</span></div>
+                </div>
+                <div class="border">
+                    <div class="info">Order No. : <span>123456982</span></div>
+                    <div class="info">Order Date : <span>02/01/2021</span></div>
+                    <div class="info">Status : <i class="fas fa-circle red"></i><span>Declined</span></div>
+                    <div class="info">Reason : <span>Sorry! we are not available on this date</span></div>
+                </div>
+            </div>
+        </section>
+        <!--Enquiry-->
+        <section class="enquiry"  id="enquirydate">
+            <div class="form-box1">
+                <h2>Enquiry Details</h2>
+                <div class="booking-details">
+                    <div class="input-box">
+                        <span class="details">Enter Full Name:</span>
+                        <input type="text" class="input-field1" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Enter Email Id:</span>
+                        <input type="email" class="input-field1 field2" required>
+                    </div>
+                    <div class="contactnumber">
+                        <div class="input-box">
+                            <span>Contact Number:</span>
+                            <input type="tel" class="input-field1 field1" placeholder="+91" pattern="[0-9]{10}" minlegth="10" maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="ordernumber">
+                        <div class="input-box">
+                            <span>Order Number:</span>
+                            <input type="text" class="input-field1 field3" pattern="[0-9]{10}" minlegth="10" maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="requirements">
+                        <textarea placeholder="Write your booking releated issues or enquires" rows="5" cols="80" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn submit-btn2">Send</button>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll', function(){
+          var header = document.querySelector('header')
+          header.classList.toggle('sticky', window.scrollY > 0);
+       });
+
+       function togglemenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+       }
+
+       function togglemenu1(){
+            var toggle1=document.querySelector('.toggle1');
+            var navigation=document.querySelector('.navigation');
+            var main=document.querySelector('.main');
+            toggle1.classList.toggle('active');
+            navigation.classList.toggle('active'); 
+            main.classList.toggle('active'); 
+       }
+
+       
+       var x=document.getElementById("login");
+       var y=document.getElementById("register");
+       var z=document.getElementById("btn");
+       function register(){
+           x.style.left= "-400px";
+           y.style.left= "50px";
+           z.style.left= "110px";
+       }
+       function login(){
+           x.style.left= "50px";
+           y.style.left= "-400px";
+           z.style.left= "0px";
+       }
+
+       function display(){
+           var navigationlist=document.querySelector('.navigationlist');
+           navigationlist.classList.toggle('active');
+       }
+      
+
+      </script>
+</body>

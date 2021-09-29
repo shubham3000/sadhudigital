@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SADHU DIGITAL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="bride_groomstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="swiper.min.css">
+       
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Sadhu DIGITAL</a>
+            <div class="toggle" onclick="togglemenu();"></div>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="index.html">Services</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </header>
+
+        <section class="slide">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image">
+                    <img src="images/photo.jpg">
+                    </div>
+                </div>
+      
+                <div class="swiper-slide">
+                    <div class="image">
+                    <img src="images/photo.jpg">
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="image">
+                    <img src="images/photo.jpg">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="image">
+                    <img src="images/photo.jpg">
+                    </div>
+                </div>
+
+            </div>     
+          </div>
+          <div class="toggle1" onclick="togglemenu();">
+            <ul class="photo">
+            <a href="#photos" class="btn" onclick="togglemenu();">SEE MORE</a>
+            </ul>
+          </div>
+        </section>
+
+        <!--Photos-->
+        <section id="photos">
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="images/photo.jpg">
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+            </div>
+            </br>
+            </br>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="images/photo.jpg">
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+            </div>
+            </br>
+            </br>
+            <div class="row">
+                <div class="column">
+                <div class="card">
+                    <img src="images/photo.jpg">
+                </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+            </div>
+            </br>
+            </br>
+            <div class="row">
+                <div class="column">
+                <div class="card">
+                    <img src="images/photo.jpg">
+                </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="images/photo.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <script src="swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+              },
+              loop: true, 
+              autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+              },
+            });
+
+            window.addEventListener('scroll', function(){
+              var header = document.querySelector('header')
+              header.classList.toggle('sticky', window.scrollY > 0);
+           });
+
+           function togglemenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            var photo = document.querySelector('.photo');
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+            photo.classList.toggle('active')
+        }
+
+          </script>
+
+
+    </body>
+</html>

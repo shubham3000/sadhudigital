@@ -3,28 +3,28 @@
 <title>SADHU DIGITAL</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Sadhu DIGITAL</a>
+        <a href="index.html" class="logo">Sadhu DIGITAL</a>
         <div class="toggle" onclick="togglemenu();"></div>
-            <ul class="menu">
-                <li>
-                    <a href="#Home" onclick="togglemenu();">Home</a>
-                </li>
-                <li>
-                    <a href="#about" onclick="togglemenu();">About</a>
-                </li>
-                <li>
-                    <a href="#Services" onclick="togglemenu();">Services</a>
-                </li>
-                <li>
-
-                    <a href="#contactus" onclick="togglemenu();">Contact</a>
-                </li>
-            </ul>
+        <ul class="menu">
+            <li>
+                <a href="#Home" onclick="togglemenu();">Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick="togglemenu();">About</a>
+            </li>
+            <li>
+                <a href="#Services" onclick="togglemenu();">Services</a>
+            </li>
+            <li>
+                <a href="#contactus" onclick="togglemenu();">Contact</a>
+            </li>
+        </ul>
     </header>
 
     <section class="banner" id="Home">
@@ -48,6 +48,8 @@
         </div>
     </section>
 
+<!--Services-->
+
     <h2 class="titletext1">Let see some collections of us</h2>
 
     <section class="chart" id="Services">
@@ -56,7 +58,7 @@
                 <img src="images/a9c11d6df633897b7f43b8b0832f7a72.jpg" class="fitbg3"> 
             </div>
             <div class="content">
-               <a href="#"><h2><span>Bride & Groom photographs</span></h2></a>
+               <a href="bride_groom.html"><h2><span>Bride & Groom photographs</span></h2></a>
             </div>
         </div>
         <div class="box">
@@ -64,7 +66,7 @@
                 <img src="images/Pose-Ideas-For-Pre-Wedding-Shoot-15.jpg" class="fitbg3"> 
             </div>
             <div class="content">
-                <a href="#"><h2><span>Pre-wedding shots</span></h2></a>
+                <a href="bride_groom.html"><h2><span>Pre-wedding shots</span></h2></a>
             </div>
         </div>
         <div class="box">
@@ -92,6 +94,8 @@
         </div>
     </section>
 
+<!--Contacts-->
+
     <section class="contact">
         <div class="heading" id="contactus">
             <h2>Contact us</h2>
@@ -101,52 +105,72 @@
                 <h3>Contact Info</h3>
                 <div class="contactinfobx">
                     <div class="box">
-                        <div class="icon"></div>
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <div class="text1">
                             <h3>Address</h3>
-                            <p>Abc nagar jharkhand</br>912892</p>
+                            <p>Electric colony jharkhand,</br>814101</p>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"></div>
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
                         <div class="text1">
                             <h3>Ph no.</h3>
-                            <p>XXXXYYYY20</p>
+                            <p>+91-620 482 5271</p>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"></div>
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
                         <div class="text1">
                             <h3>Email</h3>
-                            <p>abcdef@gmail.com</p>
+                            <p>shubhamsadhu02@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="formbx">
-                <form>
-                    <h3>Book online</h3>
-                    <input type="text" name="" placeholder="Full name">
-                    <input type="email" name="" placeholder="Email">
-                    <input type="contact" name="" placeholder="Contact no">
-                    <textarea placeholder="Your basic requirements"></textarea>
-                    <input type="submit" value="send">
-                </form>
+            <div class="mapbox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d558.3911384461363!2d87.23271781538196!3d24.275094864290487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7c53781c765%3A0x44ae44095dbbe735!2zMjTCsDE2JzMwLjMiTiA4N8KwMTMnNTcuMyJF!5e1!3m2!1sen!2sin!4v1632911033292!5m2!1sen!2sin"  allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
+        <div>
+            <a href="contact.html" class="btn2">BOOK ONLINE</a>
+        </div>
+    </section>
+<!--feedbacks-->
+
     </section>
     <section class="feedbacks"> 
         <div class="heading">
             <h2>Feedbacks</h2>
-        <div class="formbx1">
-            <form>
-                <input type="text" placeholder="Enter your name">
-                <input type="text" placeholder="Enter your email">
-                <textarea placeholder="Give us your Feedbacks" rows="5"></textarea>
-                <input type="submit" value="send">
-            </form>
         </div>
+        <div class="content3">
+            <div class="formbx1">
+                <form>
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <textarea placeholder="Give us your Feedbacks" rows="5"></textarea>
+                    <input type="submit" value="send">
+                    <input type="submit1" value="See customer reviews">
+                </form>
+            </div>
         </div>
+    </section>
+
+<!--Social handles-->
+    <section>
+        <div class="heading">
+            <h2>Our social medias</h2>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f btn1"></i></i></a>
+            <a href="#"><i class="fab fa-instagram btn1"></i></a>
+        </div>
+
     </section>
 
     <div class="copyright">
@@ -155,15 +179,15 @@
 
     <script  type="text/javascript">
         window.addEventListener('scroll', function(){
-            var header = document.querySelector('header')
+            var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
 
         function togglemenu(){
             var menuToggle = document.querySelector('.toggle');
             var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active')
-            menu.classList.toggle('active')
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
         }
     </script>
 
