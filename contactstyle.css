@@ -120,7 +120,7 @@ header.sticky ul li a
     border-radius: 20px;
 }
 
-.navigation ul li a
+.navigation ul li 
 {
     position: relative;
     display: block;
@@ -130,7 +130,7 @@ header.sticky ul li a
     color: #ffffff;
 }
 
-.navigation ul li a .icon
+.navigation ul li .icon
 {
     position: relative;
     display: block;
@@ -140,13 +140,13 @@ header.sticky ul li a
     text-align: center;
 }
 
-.navigation ul li a .icon .fas
+.navigation ul li .icon .fas
 {
     color: #ffffff;
     font-size: 25px;
 }
 
-.navigation ul li a .title
+.navigation ul li .title
 {
     position: relative;
     display: block;
@@ -237,6 +237,13 @@ header.sticky ul li a
     height: 45px;
     border-radius: 50%;
 }
+
+.tabcontent
+{
+    display: none;
+}
+
+
 
 /*------Login-------*/
 

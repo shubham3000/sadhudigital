@@ -26,29 +26,21 @@
     <div class="container">
         <div class="navigation">
             <ul class="navigationlist">
-                <li>
-                    <a href="#loginform" onclick="display();">
+                <li class="tablink" onclick="display('loginform', this, 'rgb(171 94 102)');" id="defaultOpen">
                     <span class="icon"><i class="fas fa-sign-in-alt"></i></i></span>
                     <span class="title">LogIn / Register</span>
-                    </a>
                 </li>
-                <li>
-                    <a href="#bookingdate">
+                <li class="tablink" onclick="display('bookingdate', this, 'rgb(171 94 102)');">
                     <span class="icon"><i class="fas fa-calendar-day"></i></span>
                     <span class="title">Booking</span>
-                    </a>
                 </li>
-                <li>
-                    <a href="#checkstatus">
+                <li class="tablink" onclick="display('checkstatus', this, 'rgb(171 94 102)');">
                     <span class="icon"><i class="fas fa-clipboard-list-check"></i></span>
                     <span class="title">Check Status</span>
-                    </a>
                 </li>
-                <li>
-                    <a href="#enquirydate">
+                <li class="tablink" onclick="display('enquirydate', this, 'rgb(171 94 102)');"> 
                     <span class="icon"><i class="fas fa-comment-dots"></i></span>
                     <span class="title">Enquiry</span>
-                    </a>
                 </li>
             </ul>
         </div>
@@ -63,7 +55,7 @@
         </div>
     
         <!--Login-->
-        <section class="login-page" id="loginform">
+        <section class="tabcontent" id="loginform">
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
@@ -97,7 +89,7 @@
         </section>
 
          <!--Booking-->
-         <section class="booking" id="bookingdate">
+         <section class="tabcontent tabcontent1" id="bookingdate">
             <div class="form-box1" >
                 <h2>Booking details</h2>
                 <h3>*Filled your details as per your requirement then we contact you.</h3>
@@ -138,7 +130,7 @@
         </section>
 
         <!--Check status-->
-        <section class="check-status" id="checkstatus">
+        <section class="tabcontent" id="checkstatus">
             <div class="form-box1" >
                 <h2>Booking Status</h2>
                 <h4>Present Bookings</h4>
@@ -163,7 +155,7 @@
             </div>
         </section>
         <!--Enquiry-->
-        <section class="enquiry"  id="enquirydate">
+        <section class="tabcontent"  id="enquirydate">
             <div class="form-box1">
                 <h2>Enquiry Details</h2>
                 <div class="booking-details">
@@ -234,11 +226,21 @@
            z.style.left= "0px";
        }
 
-       function display(){
-           var navigationlist=document.querySelector('.navigationlist');
-           navigationlist.classList.toggle('active');
+       function display(pageName,elmnt,color){
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
        }
-      
 
+       document.getElementById("defaultOpen").click();
+      
       </script>
 </body>
